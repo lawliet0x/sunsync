@@ -1,0 +1,12 @@
+alter table public.installations add constraint installation_name_valid check(length(trim(name)) between 1 and 160);
+alter table public.devices add constraint device_serial_valid check(length(trim(serial)) between 1 and 160);
+alter table public.plans add constraint plan_name_valid check(length(trim(name)) between 1 and 120);
+alter table public.buildings add constraint building_address_bounded check(length(address)<=500);
+alter table public.societies add constraint society_address_bounded check(length(address)<=500);
+alter table public.tariffs add constraint tariff_source_bounded check(length(source)<=2000);
+alter table public.emission_factors add constraint factor_source_bounded check(length(source)<=2000);
+alter table public.community_challenges add constraint challenge_text_bounded check(length(trim(title)) between 1 and 160 and length(trim(description)) between 1 and 2000);
+alter table public.platform_settings add constraint setting_size_bounded check(octet_length(value::text)<=16384);
+alter table public.memberships add constraint membership_unit_not_blank check(length(trim(unit))>0);
+alter table public.reading_revisions add constraint correction_reason_bounded check(length(trim(reason)) between 10 and 2000);
+alter table public.registration_requests add constraint review_note_bounded check(review_note is null or length(trim(review_note)) between 10 and 2000);
