@@ -1,0 +1,55 @@
+{
+  "retrieved_at": "2026-11-10T11:55:55.357235+00:00",
+  "publisher": "Taiwan Power Company",
+  "source_page": "https://data.gov.tw/en/datasets/29938",
+  "download_url": "https://service.taipower.com.tw/data/opendata/apply/file/d693003/001.csv",
+  "license_name": "Open Government Data License, version 1.0",
+  "license_url": "https://data.gov.tw/license",
+  "attribution": "Taiwan Power Company, 2026, Taiwan Power Company_Solar photovoltaic generation and average unit installation capacity daily generation statistics table (dataset 29938; source data version not stated). This open data is released under the Open Government Data License, version 1.0; use is permitted subject to its terms. https://data.gov.tw/license",
+  "raw_file": "taipower-solar-original.csv",
+  "raw_sha256": "5457bccb865d9829d61f431b01a14d959021f1d82e73b76c99a1bcb5028848ab",
+  "raw_bytes": 430915,
+  "raw_records": 4216,
+  "source_portal_updated_time": "2026-06-02 00:47 (portal metadata; not actual data coverage endpoint)",
+  "download_http_last_modified": "Tue, 20 Oct 2026 03:20:48 GMT",
+  "latest_actual_source_period": "2026-09",
+  "normalized_file": "taipower-solar-monthly-normalized.json",
+  "normalized_rows": 6,
+  "selection": "Two named solar PV stations; latest three actual source months July-September 2026.",
+  "field_mappings": {
+    "period": [
+      "年度/Year",
+      "月份/Month"
+    ],
+    "site_name_source": "發電站名稱/Name of The Power Station",
+    "installed_capacity_kw": "裝置容量(瓩)/Installed Capacity(kW)",
+    "generation_kwh": "發電量(度)/Power Generation(kWh)",
+    "source_average_daily_generation_per_capacity": "平均單位裝置容量每日發電量/Average of Each Unit Power Generatioon Per Day"
+  },
+  "interpretation": {
+    "generation": "Reported actual monthly solar generation kWh, copied without scaling or power integration. Primary official statistics, not modelled potential.",
+    "capacity": "Source installed capacity unit is kW, NOT kWp. Value preserved per month.",
+    "interval": "CSV year/month identifies monthly energy totals. Title mentions daily because last column is an average daily per-capacity statistic, not the energy total.",
+    "timezone": "Asia/Taipei is a geographic normalization convention requested for Taiwan calendar months. Source page/CSV does not explicitly declare timezone. Offset +08:00 boundaries were constructed, not copied source timestamps.",
+    "period_end": "Exclusive first day of next calendar month; constructed boundary, not measured timestamp.",
+    "source_average_daily_generation_per_capacity": "Supplementary source statistic copied as reported. Header does not explicitly label unit. Likely kWh/kW/day is inference only; NOT a measured daily kWh record and not used to derive energy.",
+    "site_identity": "Solar PV stations only, including solar arrays hosted at other facilities. Lanyu Power Plant Solar Power Station is its named solar installation, not all host-plant generation.",
+    "missing": "No missing/nonnumeric energy or capacity values in selected records. No imputation, date-shifting, interpolation or rescaling.",
+    "source_record_number": "1-based CSV record number, header is record 1; not physical line number if quoted multiline fields occur."
+  },
+  "checks": {
+    "selected_rows": 6,
+    "sites": 2,
+    "months": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "unique_site_months": 6
+  },
+  "limitations": [
+    "Gross-versus-net generation and meter calibration/settlement audit not verified.",
+    "Timezone is normalization convention, not source assertion.",
+    "No relationship to Maharashtra, Mira Road, local housing societies or resident consumption."
+  ]
+}

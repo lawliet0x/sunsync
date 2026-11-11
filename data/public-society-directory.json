@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "satellite_park",
+    "name": "Satellite Park Co Operative Housing Society",
+    "address": "84 Hatkesh, Mangal Nagar, Mira Bhayandar Rd, Shanti Vidya Nagari, Phase 3, Hatkesh Udhog Nagar, Mira Road East, 401107, India",
+    "locality": "Mira Road East",
+    "postal_code": "401107",
+    "source_url": "https://exa.ai/library/place/9r73ddy3wc4",
+    "source_name": "Exa Places directory",
+    "notes": "Address punctuation normalized. Public directory listing only; current registration and occupancy not independently verified.",
+    "city": "Mira Bhayandar",
+    "state": "Maharashtra",
+    "country": "India",
+    "verification_status": "public_listing_unverified",
+    "accessed_on": "2026-11-10"
+  },
+  {
+    "slug": "akash_chhaya",
+    "name": "Akash Chhaya Co-operative Housing Society",
+    "address": "A-42&41, Sector 3, Shanti Nagar, Mira Road East, Mira Bhayandar, Maharashtra 401107, India",
+    "locality": "Shanti Nagar, Mira Road East",
+    "postal_code": "401107",
+    "source_url": "https://exa.ai/library/place/c56rhh5lmdz",
+    "source_name": "Exa Places directory",
+    "notes": "A-42&41 is the building-address label published by the directory, not a resident unit record. Registration not independently verified.",
+    "city": "Mira Bhayandar",
+    "state": "Maharashtra",
+    "country": "India",
+    "verification_status": "public_listing_unverified",
+    "accessed_on": "2026-11-10"
+  },
+  {
+    "slug": "krishna_vatika",
+    "name": "Krishna Vatika Co Operative Housing Society",
+    "address": "8V28+XW2, Indralok Phase 3, Mira Road East, 401105, India",
+    "locality": "Indralok Phase 3, Mira Road East",
+    "postal_code": "401105",
+    "source_url": "https://exa.ai/library/place/btmltn0mvht",
+    "source_name": "Exa Places directory",
+    "notes": "Source supplies a plus code rather than a street/building number. Address and PIN retained as listed; not postal-address validation. Registration not independently verified.",
+    "city": "Mira Bhayandar",
+    "state": "Maharashtra",
+    "country": "India",
+    "verification_status": "public_listing_unverified",
+    "accessed_on": "2026-11-10"
+  },
+  {
+    "slug": "satyam_heritage",
+    "name": "Satyam Heritage Co-operative Housing Society",
+    "address": "Jangid Estate Rd, Gaurav Galaxy, Mira Road East, Mira Bhayandar, Maharashtra 401107, India",
+    "locality": "Gaurav Galaxy, Mira Road East",
+    "postal_code": "401107",
+    "source_url": "https://yappe.in/maharashtra/mira-bhayandar/satyam-heritage-co-operative-housing-society/2356113",
+    "source_name": "Yappe place directory",
+    "notes": "Public directory listing only; current registration and occupancy not independently verified.",
+    "city": "Mira Bhayandar",
+    "state": "Maharashtra",
+    "country": "India",
+    "verification_status": "public_listing_unverified",
+    "accessed_on": "2026-11-10"
+  }
+]
