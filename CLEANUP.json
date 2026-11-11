@@ -1,0 +1,46 @@
+{
+  "base_archive": "Updated SunSync source ZIP.zip",
+  "removed_from_cleaned_copy": [
+    "audit-results.json",
+    "CHANGED-FILES.md",
+    "CURRENT-STATUS.md",
+    "DEMO-STATUS.md",
+    "DEMO-WORKFLOW-RESULTS.json",
+    "FINAL-DEMO-BROWSER-TESTS.txt",
+    "FINAL-DEMO-DEPLOYMENT.txt",
+    "FINAL-TEST-RUN.txt",
+    "LIVE-CHECKS.json",
+    "MIRA-BHAYANDAR-HANDOVER.md",
+    "ORIGINAL-TEST-RESULTS.md",
+    "PUBLIC-REFERENCE-TEST-RESULTS.txt",
+    "REVIEW-DEPLOYMENT.md",
+    "SOCIETY-DIRECTORY-HANDOVER.md",
+    "SOCIETY-DIRECTORY-LIVE-STATUS.json",
+    "TEST-RESULTS.md",
+    "VERCEL-DEPLOYMENT.txt",
+    "verification/final-build.txt",
+    "verification/final-lint.txt",
+    "verification/final-live-reference-check.json",
+    "verification/final-node-build.txt",
+    "verification/final-tests.txt",
+    "verification/live-database-verification.json",
+    "verification/live-society-directory-db.json",
+    "verification/local-lint-node-build.txt",
+    "verification/public-data-live-access.json",
+    "verification/public-data-live-import.json",
+    "verification/public-data-live-verification.json",
+    "verification/public-data-security-advisors.json",
+    "verification/society-directory-lint-node-build.txt",
+    "verification/society-directory-production-deploy.txt",
+    "verification/staged-production-build.txt"
+  ],
+  "replaced": [
+    "README.md",
+    ".gitignore"
+  ],
+  "updated": [
+    "SETUP.md",
+    "CSV-IMPORT.md"
+  ],
+  "preserved": "All original uploaded archives remain unchanged. No runtime source, tests, migrations or provenance datasets removed."
+}

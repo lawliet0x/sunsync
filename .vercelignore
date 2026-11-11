@@ -1,0 +1,11 @@
+node_modules/
+test-results/
+playwright-report/
+.vercel/
+.env
+.env.*
+!.env.example
+.git/
+*.zip
+*logins*
+*credentials*
