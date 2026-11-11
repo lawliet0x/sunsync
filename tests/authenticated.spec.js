@@ -39,7 +39,7 @@ for (const role of Object.keys(pages)) {
     isMobile,
   }) => {
     test.skip(
-      !accounts.length,
+      !accounts.some((a) => a.role === role),
       "Provide a separate private DEMO_CREDENTIALS_FILE to run hosted authentication tests.",
     );
     test.setTimeout(90000);
@@ -79,6 +79,29 @@ for (const role of Object.keys(pages)) {
     ).toBeVisible();
     const other = role === "system" ? "resident" : "system";
     await page.goto("/#/workspace/" + other);
+    // Default pages intentionally expose read-only public sources to signed-in users.
+    const publicWorkspace = page.getByRole("region", {
+      name: "Public-source workspace",
+      exact: true,
+    });
+    await expect(publicWorkspace).toBeVisible();
+    await expect(
+      publicWorkspace.getByText("REAL PUBLIC-SOURCE RECORDS · READ ONLY", { exact: true }),
+    ).toBeVisible();
+    await expect(
+      publicWorkspace.getByRole("button", { name: "Refresh public data", exact: true }),
+    ).toBeEnabled();
+    await expect(publicWorkspace.getByRole("alert")).toHaveCount(0);
+    await expect(
+      page.getByRole("button", { name: "Refresh records", exact: true }),
+    ).toHaveCount(0);
+    // Verify denial on an operational-only page, not the public default page.
+    if (isMobile)
+      await page.getByRole("button", { name: "Open navigation", exact: true }).click();
+    await page.locator("nav").getByRole("button", {
+      name: other === "system" ? "Approvals" : "My solar credits",
+      exact: true,
+    }).click();
     await expect(
       page.getByRole("heading", {
         name: "Workspace access not assigned",
