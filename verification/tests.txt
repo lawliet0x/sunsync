@@ -1,0 +1,56 @@
+npm : npm warn Unknown env config "store-dir". This will stop working in the next major version of npm. See `npm help 
+npmrc` for supported config options.
+At line:5 char:193
++ ... LASTEXITCODE; npm test *> "$env:SESSION_DIR/checks/tests.txt"; $t=$LA ...
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+> sunsync@1.0.0 test
+> node --test tests/*.test.mjs
+
+▶ PostgreSQL migrations, RLS and transactional workflows
+  ✔ Every application table has RLS enabled (6.8951ms)
+  ✔ Auth trigger creates a profile without role escalation from metadata (6.6712ms)
+  ✔ Resident cannot self-assign a role, write readings or read another profile (11.6519ms)
+  ✔ Admin links residents within scope with cap enforcement (17.2314ms)
+  ✔ Ingestion validates energy, rejects overlaps, and retries idempotently (22.8877ms)
+  ✔ Corrections retain an immutable prior-value revision (7.7281ms)
+  ✔ Server aggregation honors role-scoped rows (12.5582ms)
+  ✔ Missing meter readings block processing (4.3437ms)
+  ✔ Allocation is retry-safe, demand-capped and estimates require sources (21.4416ms)
+  ✔ Cross-account energy, credits and notifications cannot be read or modified (10.1677ms)
+  ✔ Society admins cannot access another society or platform settings (4.7793ms)
+  ✔ Applicant cannot approve themselves; platform review is atomic and audited (8.4624ms)
+  ✔ Sourced estimates, proportional fractions and concurrent retry requests stay consistent (20.1476ms)
+  ✔ Community rankings require explicit opt-in and return no private identifiers (7.9161ms)
+  ✔ System-only admin grants, society suspension and resident deactivation enforce access (14.711ms)
+  ✔ Anonymous clients have no application-table access (1.7418ms)
+  ✔ Revoking an administrator audits the removed assignment and blocks access (8.9137ms)
+  ✔ CSV batch import is scoped, atomic, audited and retry-safe (28.1844ms)
+✔ PostgreSQL migrations, RLS and transactional workflows (5009.9684ms)
+✔ Public source rows use existing tables, no fabricated memberships and no app writes (4839.4951ms)
+✔ CSV supports BOM, CRLF, quoted commas and escaped quotes (2.5972ms)
+✔ CSV rejects malformed quotes, columns, blank data and unsafe numeric fields (2.6684ms)
+✔ CSV requires timezone-qualified completed non-overlapping intervals and stable IDs (6.9857ms)
+✔ CSV enforces file and row limits (0.7902ms)
+✔ public energy totals never substitute zero for missing consumption (3.046ms)
+✔ a real zero reading remains distinct from unavailable (0.2367ms)
+✔ date filters use source timezone including non-UTC day boundaries (34.8826ms)
+✔ provenance links accept only web URLs (0.3103ms)
+✔ existing primary pages integrate public data, without a directory route (11.2861ms)
+✔ monthly public generation is labelled without inventing daily readings or capacity units (2.1462ms)
+✔ Public municipal reference: migrations, provenance, read-only RLS and operational isolation (4715.9356ms)
+✔ Edge body reader accepts JSON and exact byte boundary (50.5704ms)
+✔ Edge body reader rejects oversized declared and undeclared payloads (3.4559ms)
+✔ Edge body reader cancels oversized streams before reading the rest (1.5699ms)
+✔ Edge body reader rejects absent, malformed JSON and invalid UTF-8 (1.7173ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5216.8448

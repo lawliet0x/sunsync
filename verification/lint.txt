@@ -1,0 +1,12 @@
+npm : npm warn Unknown env config "store-dir". This will stop working in the next major version of npm. See `npm help 
+npmrc` for supported config options.
+At line:5 char:123
++ ... | Out-Null; npm run lint *> "$env:SESSION_DIR/checks/lint.txt"; $l=$L ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+> sunsync@1.0.0 lint
+> eslint src tests *.js
+

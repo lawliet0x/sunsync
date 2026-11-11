@@ -1,0 +1,24 @@
+npm : npm warn Unknown env config "store-dir". This will stop working in the next major version of npm. See `npm help 
+npmrc` for supported config options.
+At line:5 char:260
++ ... STEXITCODE; npm run build *> "$env:SESSION_DIR/checks/build.txt"; $b= ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+> sunsync@1.0.0 build
+> vite build
+
+[36mvite v8.3.4 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 2552 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            0.42 kB │ gzip:   0.30 kB
+dist/assets/index-X_3dxFo1.css            48.63 kB │ gzip:  11.72 kB
+dist/assets/PublicReference-BSV9OZbn.js    2.05 kB │ gzip:   0.99 kB
+dist/assets/index-BB8cLBi9.js            258.94 kB │ gzip:  82.38 kB
+dist/assets/Workspace-O0bms-q0.js        414.01 kB │ gzip: 119.35 kB
+
+[32m✓ built in 1.15s[39m

@@ -1,0 +1,30 @@
+npm : npm warn Unknown env config "store-dir". This will stop working in the next major version of npm. See `npm help 
+npmrc` for supported config options.
+At line:5 char:332
++ ... STEXITCODE; npm audit --omit=dev --json *> "$env:SESSION_DIR/checks/a ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {},
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 52,
+      "dev": 323,
+      "optional": 50,
+      "peer": 1,
+      "peerOptional": 0,
+      "total": 375
+    }
+  }
+}
